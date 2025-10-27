@@ -1,25 +1,39 @@
+# ReactorCore-1.21.1
 
-Installation information
-=======
+A Minecraft 1.21.1 mod adding nuclear energy mechanics, including reactors, fuels, and safety tools.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Development Status
+I'm currently working on it to make the mod playable with basic nuclear functionality.
+The focus is on a simple fission reactor system: mining resources → crafting fuel → assembling a small reactor → generating power (Forge Energy/FE) → handling waste and radiation.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+#### Items (5 in total):
+- **Uranium Ore**:
+  Mined underground. Spawns in overworld like gold, mined them turn into raw uranium
+  
+- **Raw Uranium**:
+  Crushed from ore. smelts it into uranium ingots.
+  
+- **Uranium Ingot**:
+  smelted from ore. Intermediate crafting material, used to make fuel rods
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- **Empty Fuel Rod**: 
+  Crafted from iron ingots. Intermediate crafting material, used to make fuel rods
+  
+- **Uranium Fuel Rod**:
+  Crafted from ingots with Empty Fuel Rod. inserted into reactor to generate heat or energy.
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+#### Blocks (2 in total):
+- **Reactor Frame** :
+iron-based blocks forming the reactor's outer shell.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+- **Reactor Core**:
+Central controller block.
+
+### Expected Mechanics
+- **Assembly**: Build 3x3x3 structure with frames around internals; auto-detects formation.
+- **Operation**: Insert fuel/control rods, add water; reactor produces power but risks overheating (damage blocks) or radiation (hurts players without suit).
+  
+### **Next Steps**
+- Haven't decided yet!!
+
+Contributions welcome! See issues for bugs or ideas.
