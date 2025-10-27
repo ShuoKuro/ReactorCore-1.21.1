@@ -3,9 +3,11 @@ package com.shuokuro.reactorcore.block;
 
 import com.shuokuro.reactorcore.ReactorCore;
 import com.shuokuro.reactorcore.item.Moditems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -19,10 +21,11 @@ public class ModBlocks {
             DeferredRegister.createBlocks(ReactorCore.MOD_ID);
 
     public static final DeferredBlock<Block> URANIUM_ORE = registerBlock("uranium_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4.0F)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                            .strength(4.0F)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
