@@ -1,5 +1,6 @@
 package com.shuokuro.reactorcore;
 
+import com.shuokuro.reactorcore.item.ModCreativeModeTabs;
 import com.shuokuro.reactorcore.item.Moditems;
 import com.shuokuro.reactorcore.block.ModBlocks;
 import org.slf4j.Logger;
@@ -51,6 +52,8 @@ public class ReactorCore {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         Moditems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -68,15 +71,15 @@ public class ReactorCore {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.RAW_URANIUM);
-            event.accept(Moditems.URANIUM_INGOT);
-            event.accept(Moditems.EMPTY_FUEL_ROD);
-            event.accept(Moditems.URANIUM_FUEL_ROD);
-        }
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.URANIUM_ORE);
-        }
+//        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+//            event.accept(Moditems.RAW_URANIUM);
+//            event.accept(Moditems.URANIUM_INGOT);
+//            event.accept(Moditems.EMPTY_FUEL_ROD);
+//            event.accept(Moditems.URANIUM_FUEL_ROD);
+//        }
+//        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+//            event.accept(ModBlocks.URANIUM_ORE);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
