@@ -69,7 +69,7 @@ public class ReactorCore {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(Moditems.RAW_URANIUM);
-            event.accept(Moditems.URANIUM);
+            event.accept(Moditems.URANIUM_INGOT);
         }
     }
 
