@@ -2,5 +2,6 @@
   "item.reactorcore.raw_uranium": "Raw Uranium",
   "item.reactorcore.uranium_ingot": "Uranium Ingot",
   "item.reactorcore.empty_fuel_rod": "Empty Fuel Rod",
-  "item.reactorcore.uranium_fuel_rod": "Uranium Fuel Rod"
+  "item.reactorcore.uranium_fuel_rod": "Uranium Fuel Rod",
+  "block.reactorcore.uranium_ore": "Uranium Ore"
 }

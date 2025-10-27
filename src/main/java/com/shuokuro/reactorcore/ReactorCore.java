@@ -1,6 +1,7 @@
 package com.shuokuro.reactorcore;
 
 import com.shuokuro.reactorcore.item.Moditems;
+import com.shuokuro.reactorcore.block.ModBlocks;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -51,7 +52,7 @@ public class ReactorCore {
         NeoForge.EVENT_BUS.register(this);
 
         Moditems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -67,11 +68,14 @@ public class ReactorCore {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Moditems.RAW_URANIUM);
             event.accept(Moditems.URANIUM_INGOT);
             event.accept(Moditems.EMPTY_FUEL_ROD);
             event.accept(Moditems.URANIUM_FUEL_ROD);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.URANIUM_ORE);
         }
     }
 
