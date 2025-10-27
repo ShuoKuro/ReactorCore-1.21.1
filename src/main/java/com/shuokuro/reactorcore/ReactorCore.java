@@ -70,6 +70,8 @@ public class ReactorCore {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(Moditems.RAW_URANIUM);
             event.accept(Moditems.URANIUM_INGOT);
+            event.accept(Moditems.EMPTY_FUEL_ROD);
+            event.accept(Moditems.URANIUM_FUEL_ROD);
         }
     }
 
