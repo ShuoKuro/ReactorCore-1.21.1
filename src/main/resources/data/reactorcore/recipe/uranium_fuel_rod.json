@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "reactorcore:empty_fuel_rod"
+    },
+    "B": {
+      "item": "reactorcore:uranium_ingot"
+    }
+  },
+  "pattern": [
+    "AB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "reactorcore:uranium_fuel_rod"
+  }
+}
