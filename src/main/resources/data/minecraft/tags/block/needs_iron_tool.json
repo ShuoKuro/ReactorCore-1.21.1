@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "reactorcore:uranium_ore"
+    "reactorcore:uranium_ore",
+    "reactorcore:reactor_frame",
+    "reactorcore:reactor_core"
   ]
 }

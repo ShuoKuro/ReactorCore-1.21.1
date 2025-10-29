@@ -27,6 +27,18 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> REACTOR_FRAME = registerBlock("reactor_frame",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4.0F)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> REACTOR_CORE = registerBlock("reactor_core",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4.0F)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -4,6 +4,8 @@
   "item.reactorcore.empty_fuel_rod": "Empty Fuel Rod",
   "item.reactorcore.uranium_fuel_rod": "Uranium Fuel Rod",
   "block.reactorcore.uranium_ore": "Uranium Ore",
+  "block.reactorcore.reactor_frame": "Reactor Frame",
+  "block.reactorcore.reactor_core": "Reactor Core",
   "creativetab.reatorcore.reactor_items": "Reactor Items",
   "creativetab.reatorcore.reactor_block": "Reactor Block"
 }

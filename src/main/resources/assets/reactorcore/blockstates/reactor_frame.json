@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "reactorcore:item/reactor_frame"
+    }
+  }
+}

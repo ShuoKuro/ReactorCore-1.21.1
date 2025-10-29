@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "reactorcore:block/reactor_core_front",
+    "side": "reactorcore:block/reactor_core_side",
+    "top": "reactorcore:block/reactor_core_side"
+  }
+}

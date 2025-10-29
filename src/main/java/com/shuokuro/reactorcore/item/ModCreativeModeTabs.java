@@ -34,7 +34,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.reatorcore.reactor_block"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.URANIUM_ORE);
-
+                        output.accept(ModBlocks.REACTOR_FRAME);
+                        output.accept(ModBlocks.REACTOR_CORE);
                     }).build());
 
 
