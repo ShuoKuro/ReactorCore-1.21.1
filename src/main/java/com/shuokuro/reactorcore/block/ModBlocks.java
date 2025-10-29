@@ -23,7 +23,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> URANIUM_ORE = registerBlock("uranium_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()
-                            .strength(4.0F)
+                            .strength(3.0F)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
 
