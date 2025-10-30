@@ -29,9 +29,10 @@ iron-based blocks forming the reactor's outer shell.
 - **Reactor Core**:
 Central controller block.
 
-### Expected Mechanics
-- **Assembly**: Build 3x3x3 structure with frames around internals; auto-detects formation.
-- **Operation**: Insert fuel/control rods, add water; reactor produces power but risks overheating (damage blocks) or radiation (hurts players without suit).
+### machine
+- **Small Reactor**:
+Assembly: Build 3x3x3 structure with frames around internals; auto-detects formation.
+Operation: Insert fuel; reactor produces power
   
 ### **Next Steps**
 - Haven't decided yet!!
