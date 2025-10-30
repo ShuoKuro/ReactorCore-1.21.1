@@ -7,32 +7,32 @@ I'm currently working on it to make the mod playable with basic nuclear function
 The focus is on a simple fission reactor system: mining resources → crafting fuel → assembling a small reactor → generating power (Forge Energy/FE) → handling waste and radiation.
 
 #### Items (4 in total):
-- **Raw Uranium**:
-  Crushed from ore. smelts it into uranium ingots.
+1. **Raw Uranium**:
+-  Crushed from ore. smelts it into uranium ingots.
   
-- **Uranium Ingot**:
-  smelted from ore. Intermediate crafting material, used to make fuel rods
+2. **Uranium Ingot**:
+-  smelted from ore. Intermediate crafting material, used to make fuel rods
 
-- **Empty Fuel Rod**: 
-  Crafted from iron ingots. Intermediate crafting material, used to make fuel rods
+3. **Empty Fuel Rod**: 
+-  Crafted from iron ingots. Intermediate crafting material, used to make fuel rods
   
-- **Uranium Fuel Rod**:
-  Crafted from ingots with Empty Fuel Rod. inserted into reactor to generate heat or energy.
+4. **Uranium Fuel Rod**:
+-  Crafted from ingots with Empty Fuel Rod. inserted into reactor to generate heat or energy.
 
 #### Blocks (3 in total):
-- **Uranium Ore**:
-  Mined underground. Spawns in overworld like gold, mined them turn into raw uranium.
+1. **Uranium Ore**:
+-  Mined underground. Spawns in overworld like gold, mined them turn into raw uranium.
   
-- **Reactor Frame** :
-iron-based blocks forming the reactor's outer shell.
+2. **Reactor Frame** :
+-  iron-based blocks forming the reactor's outer shell.
 
-- **Reactor Core**:
-Central controller block.
+3. **Reactor Core**:
+-  Central controller block.
 
 ### machine
 - **Small Reactor**:
-Assembly: Build 3x3x3 structure with frames around internals; auto-detects formation.
-Operation: Insert fuel; reactor produces power
+  -  Assembly: Build 3x3x3 structure with frames around internals; auto-detects formation.
+  -  Operation: Insert fuel; reactor produces power
   
 ### **Next Steps**
 - Haven't decided yet!!
